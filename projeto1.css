@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Oswald, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.section-text {
+  display: inline-block;
+  width: 60%;
+  margin-top: 12%;
+  padding: 100px;
+}
+
+.section-img {
+  display: inline-block;
+  background: rgba(93, 93, 125, 0.16);
+  width: 40%;
+  height: 100vh;
+  position: absolute;
+}
+
+h1 {
+  color: #5d5d7d;
+  line-height: 38px;
+  font-weight: 400;
+  width: 250px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+p {
+  color: #5d5d7d;
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  width: 540px;
+  margin: 15px 0;
+}
+
+button {
+  height: 40px;
+  width: 160px;
+  background: #9499ea;
+  box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+img {
+  right: 90px;
+  height: 350px;
+  width: 300px;
+  top: 150px;
+  position: relative;
+}
+
+a {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #5d5d7d;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+a:nth-child(2) {
+  opacity: 0.4;
+}
+
+a:hover {
+  opacity: 0.4;
+}
+
+a:active {
+  opacity: 0.8;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .section-text {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .section-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 40px;
+    bottom: 0;
+  }
+
+  img {
+    position: static;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  header {
+    display: none;
+  }
+
+  h1 {
+    width: auto;
+    font-size: 36px;
+    line-height: 52px;
+    margin: 70px 50px 0 50px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  p {
+    width: auto;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 15px 40px;
+    text-align: center;
+  }
+
+  button {
+    width: 269px;
+    height: 62px;
+    background: #9499ea;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .section-text {
+    height: 50%;
+    bottom: 8%;
+    position: relative;
+  }
+
+  .section-img {
+    height: 50%;
+    padding: 40px;
+  }
+
+  img {
+    height: 250px;
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+}
